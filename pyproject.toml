@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "insurance-manager"
+version = "1.0.0"
+description = "Professional insurance policy management system with PDF processing and automated notifications"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "insurance_manager"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0"
+python-dotenv = "^1.0.0"
+google-auth-oauthlib = "^1.1.0"
+google-auth-httplib2 = "^0.2.0"
+google-api-python-client = "^2.100.0"
+requests = "^2.31.0"
+pydantic = "^2.5.0"
+pydantic-settings = "^2.1.0"
+python-telegram-bot = "^20.3"
+google-generativeai = "^0.3.0"
+PyPDF2 = "^3.0.1"
+python-multipart = "^0.0.6"
+pydantic[email] = "^2.5.0"
+pytest = "^7.4.3"
+pytest-asyncio = "^0.21.1"
+httpx = "^0.25.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.0"
+flake8 = "^6.1.0"
+mypy = "^1.7.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
